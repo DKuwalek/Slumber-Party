@@ -1,9 +1,4 @@
 public class FibonacciIteration{
-
-	public static void main(String bongo[])
-	{
-		System.out.println(fibonacciIteration(19));
-	}
 	
 	public static int fibonacciIteration(int element)
 	{	
