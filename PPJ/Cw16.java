@@ -50,28 +50,21 @@ public class Cw16 {
 //		Zadanie 3 (1p)
 
 //		Utwórz funkcjê,
-//		która rekurencyjnie sprawdzi czy znaki (od pierwszego do ostatniego) niepustej tablicy elementów typu char tworz¹ palindrom.
+//		która rekurencyjnie sprawdzi czy znaki (od pierwszego do ostatniego)
+//		niepustej tablicy elementów typu char tworz¹ palindrom.
 		
 		String s = "dad";
 		
 		System.out.println(isPalindrome(s, 0, s.length()-1));
 	}
 	public static boolean isPalindrome(String str,int low, int high)
-	
-	   {  if(high <= low)
-	
-	           return true;
-	
-	          else if (str.charAt(low)!= str.charAt(high))
-	
-	              return false;
-	
-	              else
-	
-	                  return isPalindrome(str,low+1,high-1);
-	
-	     
-	
+	{
+		if(high <= low)
+	        return true;
+		else if (str.charAt(low)!= str.charAt(high))
+	        return false;
+	    else
+			return isPalindrome(str,low+1,high-1);
 	   }
 
 }
